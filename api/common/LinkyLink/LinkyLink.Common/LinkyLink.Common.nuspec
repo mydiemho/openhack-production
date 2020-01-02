@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>LinkyLink.Common</id>
+    <version>1.0.0</version>
+    <title>LinkyLink application data models and helper methods</title>
+    <authors>Microsoft</authors>
+    <owners>CSE Production Open Hack Team</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <description>LinkyLink application data models and helper methods</description>
+    <releaseNotes>Initial 1.0.0 release</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>LinkyLink.Common</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" />
+      <dependency id="OpenGraph-Net" version="3.2.0" />
+    </dependencies>
+  </metadata>
+</package>
