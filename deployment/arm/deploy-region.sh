@@ -90,7 +90,7 @@ az group deployment create \
     --template-file region.json \
     --parameters location=$region apimName=$apimName appServicePlanName=$appServicePlanName \
     backendAppName=$backendAppName appInsightsName=$appInsightsName storageActName=$storageActName \
-    --verbose
+    -o table
 
 echo
 echo "######## Configuring blob storage for static website hosting"

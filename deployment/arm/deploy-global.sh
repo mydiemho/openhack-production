@@ -118,4 +118,5 @@ az group deployment create \
     --parameters \
     frontDoorName=$frontDoorName frontDoorEndpoint=$frontDoorEndpoint \
     frontendHosts=$frontendHosts backendHosts=$backendHosts \
-    cosmosdbName=$cosmosdbName cosmosdbRegions=$cosmosdbRegions
+    cosmosdbName=$cosmosdbName cosmosdbRegions=$cosmosdbRegions \
+    -o table
