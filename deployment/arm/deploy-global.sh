@@ -106,7 +106,7 @@ az group create \
 
 echo 
 SLEEP_DURATION=10
-echo "Sleeping for $SLEEP_DURATION seconds to wait for resource grupo creation to finish else deployment will fail ...."
+echo "Sleeping for $SLEEP_DURATION seconds to wait for resource group creation to finish else  group deployment will fail ...."
 sleep $SLEEP_DURATION
 
 echo
