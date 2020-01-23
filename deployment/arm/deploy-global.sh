@@ -104,6 +104,11 @@ az group create \
     --name $resourceGroupName \
     --location ${regions[0]}
 
+echo 
+SLEEP_DURATION=10
+echo "Sleeping for $SLEEP_DURATION seconds to wait for resource grupo creation to finish else deployment will fail ...."
+sleep $SLEEP_DURATION
+
 echo
 echo "Deploying global resources to $resourceGroupName"
 az group deployment create \
