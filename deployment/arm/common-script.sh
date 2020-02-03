@@ -98,6 +98,8 @@ function generateStorageAccountName() {
 # Deployment scopes
 globalScope="$businessUnit-$appName-$env-gbl"
 
+source utils.sh
+
 # Global configs
 frontDoorName=$(createResourceName -p fd -u $businessUnit -a $appName -e $env -r gbl)
 frontDoorEndpoint="$frontDoorName.azurefd.net"
