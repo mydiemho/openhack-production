@@ -1,0 +1,26 @@
+name: frontend-build 
+
+pr:
+  autoCancel: true
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - frontend/*
+      - pipelines/frontend-build.yml
+      - pipelines/frontend-deploy.yml
+      - pipelines/templates/frontend-build.yml
+      - pipelines/templates/frontend-deploy-environment.yml
+
+variables:
+  - group: prodoh-urlist-common
+
+pool:
+  vmImage: "ubuntu-latest"
+
+stages:
+  - stage: BuildAndValidate
+    displayName: Build & Validate
+    jobs:
+      - template: templates/frontend-build.yml
